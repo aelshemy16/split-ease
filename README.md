@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SplitEase
 
-## Getting Started
+SplitEase is a modern, user-friendly application designed to simplify expense sharing and bill splitting among friends, roommates, and groups. The application provides an intuitive interface for tracking shared expenses, settling debts, and maintaining financial transparency within groups.
 
-First, run the development server:
+## 🚀 Project Status
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project is currently in active development:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ✅ Frontend implementation (React, Next.js)
+- 🔄 Backend services (in progress)
+- 🔄 Advanced features (planned)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Technical Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
+- **Framework**: Next.js 15
+- **UI Library**: React 
+- **Styling**: Tailwind CSS with ShadCN UI components
+- **Authentication**: NextAuth.js
+- **State Management**: React Context API and Hooks
 
-## Learn More
+### Backend (Planned)
+- **Database**: MongoDB
+- **API**: RESTful API with Express.js
+- **Real-time**: WebSockets for live updates (planned)
+- **Notifications**: Email and push notifications (planned)
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Current Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### User Management
+- [x] User registration and authentication
+- [x] User profile management
+- [x] Secure password handling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Dashboard
+- [x] Overview of expenses and balances
+- [x] Navigation between different sections
+- [x] Responsive design for mobile and desktop
 
-## Deploy on Vercel
+### Transaction Management
+- [x] Basic expense creation
+- [x] Transaction history view
+- [ ] Advanced filtering and sorting (coming soon)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Friend Management
+- [x] Add and view friends
+- [x] Group creation
+- [ ] Group expense splitting (coming soon)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗺️ Roadmap
+
+### Short-term Goals
+- Implement backend services for better data management
+- Add expense categories and tags
+- Enhance transaction history with search and filter options
+- Implement email notifications for expense reminders
+
+### Mid-term Goals
+- Add support for recurring expenses
+- Implement currency conversion for international groups
+- Create mobile apps for iOS and Android
+- Add image upload for receipts and expense documentation
+
+### Long-term Vision
+- Integrate with payment providers for direct settlements
+- Add budgeting and financial analytics
+- Implement AI-driven insights for spending patterns
+- Expand multi-language support
+
+## 🧪 Development Branches
+
+- **main**: Stable releases with comprehensive documentation
+- **dev**: Active development with latest features (may contain experimental features)
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18.0 or higher
+- npm or yarn
+- MongoDB (for future backend integration)
+
+### Setup Instructions
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a `.env.local` file with the following variables:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your_secure_secret_key
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   ```
+4. Run the development server: `npm run dev`
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+Made with ❤️ by the SplitEase team
